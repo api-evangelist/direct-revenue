@@ -1,23 +1,67 @@
 aid: direct-revenue
 name: Direct Revenue
-description: Direct Revenue is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Direct Revenue was surfaced as a portfolio company of Insight Partners and added to the
+  API Evangelist network as a stub lead. A July 2026 enrichment pass found no live corporate or developer
+  surface for this company: directrevenue.com resolves to an Efty domain-for-sale parking lander (domain
+  registered 2002, held at Tucows, listed for sale); direct-revenue.com is a squatted domain that 302-redirects
+  to baidu.com; directrevenue.co returns Cloudflare 522 (origin unreachable); and directrevenue.net,
+  directrevenue.ai and getdirectrevenue.com do not resolve at all. There is no website, no developer
+  portal, no documentation, no API, and no matching provider in the APIs.io catalog. This profile is
+  retained as a historical lead record only and carries no API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/direct-revenue/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/direct-revenue.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: no-api-surface
+x-status-evidence:
+- probe: https://directrevenue.com
+  result: 302 to www.directrevenue.com; Efty "Investor Smart Lander" domain-for-sale page
+  date: '2026-07-20'
+- probe: https://direct-revenue.com
+  result: 301 to http://www.direct-revenue.com/ then 302 to https://www.baidu.com/ (squatted)
+  date: '2026-07-20'
+- probe: https://directrevenue.co
+  result: HTTP 522 from Cloudflare (origin unreachable)
+  date: '2026-07-20'
+- probe: dns
+  result: directrevenue.net, directrevenue.ai and getdirectrevenue.com have no A record
+  date: '2026-07-20'
+- probe: apis.io catalog
+  result: no provider matching "Direct Revenue"; only unrelated fuzzy matches on "revenue"
+  date: '2026-07-20'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insight Partners
+- Portfolio Lead
+- Defunct
+- No API Surface
+- Advertising
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
