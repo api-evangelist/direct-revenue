@@ -44,7 +44,7 @@ x-status-evidence:
 - probe: apis.io catalog
   result: no provider matching "Direct Revenue"; only unrelated fuzzy matches on "revenue"
   date: '2026-07-20'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
