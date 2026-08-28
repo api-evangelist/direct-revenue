@@ -9,6 +9,17 @@ description: 'Direct Revenue was surfaced as a portfolio company of Insight Part
   portal, no documentation, no API, and no matching provider in the APIs.io catalog. This profile is
   retained as a historical lead record only and carries no API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/direct-revenue/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
