@@ -4,10 +4,10 @@ description: 'Direct Revenue was surfaced as a portfolio company of Insight Part
   API Evangelist network as a stub lead. A July 2026 enrichment pass found no live corporate or developer
   surface for this company: directrevenue.com resolves to an Efty domain-for-sale parking lander (domain
   registered 2002, held at Tucows, listed for sale); direct-revenue.com is a squatted domain that 302-redirects
-  to baidu.com; directrevenue.co returns Cloudflare 522 (origin unreachable); and directrevenue.net,
-  directrevenue.ai and getdirectrevenue.com do not resolve at all. There is no website, no developer
-  portal, no documentation, no API, and no matching provider in the APIs.io catalog. This profile is
-  retained as a historical lead record only and carries no API artifacts.'
+  to baidu.com; directrevenue.co returns Cloudflare 522 (origin unreachable); and directrevenue.net, directrevenue.ai
+  and getdirectrevenue.com do not resolve at all. There is no website, no developer portal, no documentation,
+  no API, and no matching provider in the APIs.io catalog. This profile is retained as a historical lead
+  record only and carries no API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/direct-revenue/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown
@@ -38,7 +38,7 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-status: no-api-surface
+x-status: defunct
 x-status-evidence:
 - probe: https://directrevenue.com
   result: 302 to www.directrevenue.com; Efty "Investor Smart Lander" domain-for-sale page
@@ -57,7 +57,7 @@ x-status-evidence:
   date: '2026-07-20'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-09-15'
 tags:
 - Company
 - Insight Partners
